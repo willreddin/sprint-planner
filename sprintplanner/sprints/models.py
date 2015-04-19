@@ -9,6 +9,7 @@ class Sprint(models.Model):
 	end = models.DateTimeField('end date')
 	#organiser and attendee information
 	organizer = models.CharField(max_length=200)
+	pivotal_tracker_link = models.URLField(max_length=200)
 
 	def __str__(self):
 		return self.summary

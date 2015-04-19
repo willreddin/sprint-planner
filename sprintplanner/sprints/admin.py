@@ -11,6 +11,7 @@ class SprintAdmin(admin.ModelAdmin):
 	fieldsets = [
 		(None, {'fields': ['summary', 'location', 'organizer']}),
 		('Date information', {'fields': ['start', 'end']}),
+		('Project Information', {'fields': ['pivotal_tracker_link']})
 	]
 	inlines = [AttendeeInLine]
 	list_display = ('summary', 'start', 'end', 'organizer')
